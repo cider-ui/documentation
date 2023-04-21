@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
-import { Logo, Logomark } from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
@@ -36,20 +36,7 @@ function GitHubIcon(props) {
   )
 }
 
-function Header({ navigation }) {
-  let [isScrolled, setIsScrolled] = useState(false)
-
-  useEffect(() => {
-    function onScroll() {
-      setIsScrolled(window.scrollY > 0)
-    }
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-    }
-  }, [])
-
+const Header = ({ navigation }) => {
   return (
     <header
       className="sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8"
@@ -59,7 +46,6 @@ function Header({ navigation }) {
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
-          <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 lg:block" />
         </Link>
       </div>
@@ -142,7 +128,6 @@ export function Layout({ children, title, tableOfContents }) {
   return (
     <>
       <Header navigation={navigation} />
-
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 " />
@@ -156,6 +141,7 @@ export function Layout({ children, title, tableOfContents }) {
           </div>
         </div>
         <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
+          {/* Page content */}
           <article>
             {(title || section) && (
               <header className="mb-9 space-y-1">
@@ -173,6 +159,7 @@ export function Layout({ children, title, tableOfContents }) {
             )}
             <Prose>{children}</Prose>
           </article>
+          {/* Pagination */}
           <dl className="mt-12 flex border-t border-slate-200 pt-6 ">
             {previousPage && (
               <div>
