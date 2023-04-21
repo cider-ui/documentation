@@ -5,7 +5,7 @@ export default function Document() {
     <Html className="antialiased [font-feature-settings:'ss01']" lang="en">
       <Head>
       </Head>
-      <body className="bg-white ">
+      <body className="bg-white">
         <Main />
         <NextScript />
       </body>

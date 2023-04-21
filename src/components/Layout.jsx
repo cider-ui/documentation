@@ -7,7 +7,7 @@ import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
-import { Search } from '@/components/Search'
+// import { Search } from '@/components/Search'
 
 const navigation = [
   {
@@ -48,9 +48,6 @@ const Header = ({ navigation }) => {
         <Link href="/" aria-label="Home page">
           <Logo className="hidden h-9 w-auto fill-slate-700 lg:block" />
         </Link>
-      </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <Link href="https://github.com/cider-ui" className="group" aria-label="GitHub">
@@ -151,7 +148,7 @@ export function Layout({ children, title, tableOfContents }) {
                   </p>
                 )}
                 {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 ">
+                  <h1 className="font-display text-3xl tracking-tight text-slate-900">
                     {title}
                   </h1>
                 )}
@@ -160,10 +157,10 @@ export function Layout({ children, title, tableOfContents }) {
             <Prose>{children}</Prose>
           </article>
           {/* Pagination */}
-          <dl className="mt-12 flex border-t border-slate-200 pt-6 ">
+          <dl className="mt-12 flex border-t border-slate-200 pt-6">
             {previousPage && (
               <div>
-                <dt className="font-display text-sm font-medium text-slate-900 ">
+                <dt className="font-display text-sm font-medium text-slate-900">
                   Previous
                 </dt>
                 <dd className="mt-1">
@@ -178,7 +175,7 @@ export function Layout({ children, title, tableOfContents }) {
             )}
             {nextPage && (
               <div className="ml-auto text-right">
-                <dt className="font-display text-sm font-medium text-slate-900 ">
+                <dt className="font-display text-sm font-medium text-slate-900">
                   Next
                 </dt>
                 <dd className="mt-1">
