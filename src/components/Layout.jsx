@@ -120,7 +120,6 @@ function useTableOfContents(tableOfContents) {
 
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
-  let isHomePage = router.pathname === '/'
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
@@ -161,7 +160,7 @@ export function Layout({ children, title, tableOfContents }) {
             {(title || section) && (
               <header className="mb-9 space-y-1">
                 {section && (
-                  <p className="font-display text-sm font-medium text-sky-500">
+                  <p className="font-display text-sm font-medium text-pink-500">
                     {section.title}
                   </p>
                 )}
@@ -225,7 +224,7 @@ export function Layout({ children, title, tableOfContents }) {
                           href={`#${section.id}`}
                           className={clsx(
                             isActive(section)
-                              ? 'text-sky-500'
+                              ? 'text-pink-500'
                               : 'font-normal text-slate-500 hover:text-slate-700 '
                           )}
                         >
@@ -243,7 +242,7 @@ export function Layout({ children, title, tableOfContents }) {
                                 href={`#${subSection.id}`}
                                 className={
                                   isActive(subSection)
-                                    ? 'text-sky-500'
+                                    ? 'text-pink-500'
                                     : 'hover:text-slate-600 '
                                 }
                               >

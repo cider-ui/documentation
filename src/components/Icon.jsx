@@ -67,11 +67,3 @@ export function Gradient({ color = 'blue', ...props }) {
     </radialGradient>
   )
 }
-
-export function LightMode({ className, ...props }) {
-  return <g className={clsx('', className)} {...props} />
-}
-
-export function DarkMode({ className, ...props }) {
-  return <g className={clsx('hidden ', className)} {...props} />
-}

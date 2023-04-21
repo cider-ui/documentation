@@ -4,15 +4,13 @@ import { Icon } from '@/components/Icon'
 
 const styles = {
   note: {
-    container:
-      'bg-sky-50 ',
-    title: 'text-sky-900 ',
-    body: 'text-sky-800 [--tw-prose-background:theme(colors.sky.50)] prose-a:text-sky-900 prose-code:text-sky-900 ',
+    container: 'bg-pink-50',
+    title: 'text-pink-900',
+    body: 'text-pink-800 [--tw-prose-background:theme(colors.sky.50)] prose-a:text-pink-900 prose-code:text-pink-900',
   },
   warning: {
-    container:
-      'bg-amber-50 ',
-    title: 'text-amber-900 ',
+    container: 'bg-amber-50',
+    title: 'text-amber-900',
     body: 'text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900',
   },
 }
