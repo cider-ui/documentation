@@ -38,16 +38,17 @@ const tags = {
   },
   'cider-button': {
     selfClosing: true,
-    render: ({ rightIcon, leftIcon, ...args }) => (
+    render: ({ rightIcon, leftIcon, filled, ...args }) => (
       <Button
         rightIcon={rightIcon && <PaperAirplaneIcon />}
         leftIcon={leftIcon && <BellAlertIcon />}
+        filled={!!filled}
         {...args}
       />
     ),
     attributes: {
       label: { type: String },
-      filled: { type: Boolean },
+      filled: { type: String },
       style: { type: String },
       size: { type: String },
       leftIcon: { type: String },
