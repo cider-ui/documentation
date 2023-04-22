@@ -1,7 +1,8 @@
 import { Callout } from '@/components/Callout'
-import { QuickLink, QuickLinks } from '@/components/QuickLinks'
+import ComponentsWrapper from '@/components/ComponentsWrapper'
 import Button from '@cider-ui/cider-ui/dist/components/Button/Button.js'
 import '@cider-ui/cider-ui/dist/styles/main.css'
+import { BellAlertIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline"
 
 const tags = {
   callout: {
@@ -31,30 +32,27 @@ const tags = {
       </figure>
     ),
   },
-  'quick-links': {
-    render: QuickLinks,
+  'components-wrapper': {
+    render: ComponentsWrapper,
+    selfClosing: false,
   },
-  'quick-link': {
+  'cider-button': {
     selfClosing: true,
-    render: QuickLink,
-    attributes: {
-      title: { type: String },
-      description: { type: String },
-      icon: { type: String },
-      href: { type: String },
-    },
-  },
-  'aze': {
-    selfClosing: true,
-    render: Button,
+    render: ({ rightIcon, leftIcon, ...args }) => (
+      <Button
+        rightIcon={rightIcon && <PaperAirplaneIcon />}
+        leftIcon={leftIcon && <BellAlertIcon />}
+        {...args}
+      />
+    ),
     attributes: {
       label: { type: String },
       filled: { type: Boolean },
       style: { type: String },
       size: { type: String },
-      leftIcon: { type: Function },
-      righticon: { type: Function },
-    }
+      leftIcon: { type: String },
+      rightIcon: { type: String },
+    },
   },
 }
 

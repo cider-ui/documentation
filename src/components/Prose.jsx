@@ -13,7 +13,7 @@ export function Prose({ as: Component = 'div', className, ...props }) {
         // links
         'prose-a:font-semibold',
         // link underline
-        'prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:prose-a:[--tw-prose-underline-size:6px]] [inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] [--tw-prose-underline-size:6px]',
+        'prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,2px)+2px))_0_0_var(--tw-prose-underline,theme(colors.red.500))] hover:prose-a:[--tw-prose-underline-size:2px]] [inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] [--tw-prose-underline-size:6px]',
         // pre
         'prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg',
         // hr

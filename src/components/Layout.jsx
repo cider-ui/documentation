@@ -7,7 +7,6 @@ import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
-// import { Search } from '@/components/Search'
 
 const navigation = [
   {
@@ -26,6 +25,12 @@ const navigation = [
       { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
     ],
   },
+  {
+    title: 'Components',
+    links: [
+      {title: 'Button', href: '/docs/button'}
+    ]
+  }
 ]
 
 function GitHubIcon(props) {

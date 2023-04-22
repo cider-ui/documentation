@@ -2,7 +2,7 @@ export function Logo() {
   return (
     <svg className="h-8 w-auto" id="Calque_2" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599.65 139.43">
       <defs>
-        <linearGradient id="cider-gradient" x1="0" y1="69.72" x2="110.6" y2="69.72" gradientUnits="userSpaceOnUse">
+        <linearGradient id="cider-gradient" x1="-5.13" y1="20.93" x2="96.85" y2="122.91" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#ec4899" />
           <stop offset=".5" stopColor="#ef4444" />
           <stop offset="1" stopColor="#eab308" />
