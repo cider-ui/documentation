@@ -21,6 +21,7 @@ const navigation = [
     links: [
       { title: 'Button', href: '/docs/button' },
       { title: 'Input', href: '/docs/input' },
+      { title: 'Tag', href: '/docs/tag' },
     ]
   }
 ]
