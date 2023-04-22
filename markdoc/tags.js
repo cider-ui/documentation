@@ -1,8 +1,11 @@
 import { Callout } from '@/components/Callout'
 import ComponentsWrapper from '@/components/ComponentsWrapper'
-import Button from '@cider-ui/cider-ui/dist/components/Button/Button.js'
-import '@cider-ui/cider-ui/dist/styles/main.css'
 import { BellAlertIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline"
+
+import Input from '@cider-ui/cider-ui/dist/components/Input/Input.js'
+import Button from '@cider-ui/cider-ui/dist/components/Button/Button.js'
+
+import '@cider-ui/cider-ui/dist/styles/main.css'
 
 const tags = {
   callout: {
@@ -16,21 +19,6 @@ const tags = {
       },
     },
     render: Callout,
-  },
-  figure: {
-    selfClosing: true,
-    attributes: {
-      src: { type: String },
-      alt: { type: String },
-      caption: { type: String },
-    },
-    render: ({ src, alt = '', caption }) => (
-      <figure>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt={alt} />
-        <figcaption>{caption}</figcaption>
-      </figure>
-    ),
   },
   'components-wrapper': {
     render: ComponentsWrapper,
@@ -55,6 +43,14 @@ const tags = {
       rightIcon: { type: String },
     },
   },
+  'cider-input': {
+    render: (args) => <Input {...args} />,
+    selfClosing: true,
+    attributes: {
+      style: { type: String },
+      placeholder: { type: String }
+    }
+  }
 }
 
 export default tags

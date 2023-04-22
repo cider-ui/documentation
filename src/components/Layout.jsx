@@ -17,18 +17,10 @@ const navigation = [
     ],
   },
   {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
     title: 'Components',
     links: [
-      {title: 'Button', href: '/docs/button'}
+      { title: 'Button', href: '/docs/button' },
+      { title: 'Input', href: '/docs/input' },
     ]
   }
 ]
