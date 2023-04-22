@@ -19,12 +19,16 @@ const navigation = [
   {
     title: 'Components',
     links: [
+      { title: 'Alert', href: '/docs/alert' },        // TODO
+      { title: 'Badge', href: '/docs/badge' },        // TODO
       { title: 'Button', href: '/docs/button' },
       { title: 'Input', href: '/docs/input' },
       { title: 'Tag', href: '/docs/tag' },
+      { title: 'Textarea', href: '/docs/textarea' },
     ]
   }
 ]
+
 
 function GitHubIcon(props) {
   return (

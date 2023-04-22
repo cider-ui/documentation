@@ -5,6 +5,7 @@ import { BellAlertIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline"
 import Button from '@cider-ui/cider-ui/dist/components/Button/Button.js'
 import Input from '@cider-ui/cider-ui/dist/components/Input/Input.js'
 import Tag from '@cider-ui/cider-ui/dist/components/Tag/Tag.js'
+import Textarea from '@cider-ui/cider-ui/dist/components/Textarea/Textarea.js'
 
 import '@cider-ui/cider-ui/dist/styles/main.css'
 
@@ -60,6 +61,22 @@ const tags = {
       style: { type: String },
     },
   },
+  'cider-textarea': {
+    render: (args) => <Textarea {...args} />,
+    selfClosing: true,
+    attributes: {
+      style: { type: String },
+      placeholder: { type: String },
+    },
+  }
 }
 
 export default tags
+
+// '': {
+  // render: (args) => < {...args} />,
+  // selfClosing: true,
+  // attributes: {
+  //
+  //},
+// }
