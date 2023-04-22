@@ -7,9 +7,9 @@ description: Cache every single thing your app could ever do ahead of time, so y
 Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
 
 
-{% aze label="small" size="small" /%}
-{% aze label="medium" size="medium" /%}
-{% aze label="large" size="large" /%}
+{% aze onClick="" label="button" size="small" /%}
+{% aze onClick="" label="button" size="medium" /%}
+{% aze onClick="" label="button" size="large" /%}
 
 {% quick-links %}
 

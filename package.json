@@ -10,7 +10,7 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@cider-ui/cider-ui": "^1.0.2",
+    "@cider-ui/cider-ui": "^1.0.2a",
     "@docsearch/react": "^3.2.1",
     "@headlessui/react": "^1.7.13",
     "@markdoc/markdoc": "0.1.7",

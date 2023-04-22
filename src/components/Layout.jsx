@@ -41,7 +41,7 @@ const Header = ({ navigation }) => {
     <header
       className="sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8"
     >
-      <div className="mr-6 flex lg:hidden">
+      <div className="mr-6 lg:hidden">
         <MobileNavigation navigation={navigation} />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
