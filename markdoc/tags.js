@@ -2,6 +2,7 @@ import { Callout } from '@/components/Callout'
 import ComponentsWrapper from '@/components/ComponentsWrapper'
 import { BellAlertIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline"
 
+import Alert from '@cider-ui/cider-ui/dist/components/Alert/Alert.js'
 import Button from '@cider-ui/cider-ui/dist/components/Button/Button.js'
 import Input from '@cider-ui/cider-ui/dist/components/Input/Input.js'
 import Tag from '@cider-ui/cider-ui/dist/components/Tag/Tag.js'
@@ -25,6 +26,15 @@ const tags = {
   'components-wrapper': {
     render: ComponentsWrapper,
     selfClosing: false,
+  },
+  'cider-alert': {
+    render: (args) => <Alert {...args} />,
+    selfClosing: true,
+    attributes: {
+      label: { type: String },
+      severity: { type: String },
+      title: { type: String },
+    },
   },
   'cider-button': {
     selfClosing: true,
