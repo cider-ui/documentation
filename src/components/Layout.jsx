@@ -19,8 +19,8 @@ const navigation = [
   {
     title: 'Components',
     links: [
-      { title: 'Alert', href: '/docs/alert' },        // TODO
-      { title: 'Badge', href: '/docs/badge' },        // TODO
+      { title: 'Alert', href: '/docs/alert' },
+      { title: 'Badge', href: '/docs/badge' },
       { title: 'Button', href: '/docs/button' },
       { title: 'Input', href: '/docs/input' },
       { title: 'Tag', href: '/docs/tag' },
